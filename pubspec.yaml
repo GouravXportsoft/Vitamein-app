@@ -86,6 +86,9 @@ flutter:
     - family: Nunito
       fonts:
         - asset: assets\fonts\Nunito-VariableFont_wght.ttf
+    - family: PaytoneOne
+      fonts:
+        - asset: assets\fonts\PaytoneOne-Regular.ttf
 
   #   - family: Trajan Pro
   #     fonts:

@@ -20,7 +20,7 @@ class _startnowState extends State<startnow> {
           'Vitamein',
           style: TextStyle(
               color: Colors.lightGreenAccent,
-              fontFamily: 'Schyler',
+              fontFamily: 'PaytoneOne',
               fontSize: 25),
         ),
         actions: [
@@ -48,7 +48,8 @@ class _startnowState extends State<startnow> {
                       style: TextStyle(
                           color: Colors.grey,
                           fontSize: 25,
-                          fontFamily: 'Scheherazade New'),
+                          fontFamily: 'Nunito',
+                          fontWeight: FontWeight.bold),
                     ),
                   ),
                   const SizedBox(
@@ -83,18 +84,21 @@ class _startnowState extends State<startnow> {
                                       style: TextStyle(
                                           color: Colors.black,
                                           fontSize: 20,
-                                          fontFamily: 'EB Garamond')),
+                                          fontFamily: 'Nunito',
+                                          fontWeight: FontWeight.bold)),
                                   TextSpan(
                                       text: 'report & ',
                                       style: TextStyle(
-                                          color: Colors.black, fontSize: 20)),
+                                          color: Colors.black,
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold)),
                                   TextSpan(
                                     text: 'Get curated your diet\nplan\n',
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold,
                                         fontSize: 20,
-                                        fontFamily: 'EB Garamond'),
+                                        fontFamily: 'Nunito'),
                                   ),
                                   TextSpan(
                                     text:
@@ -102,14 +106,16 @@ class _startnowState extends State<startnow> {
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
-                                        fontWeight: FontWeight.w300),
+                                        fontWeight: FontWeight.w300,
+                                        fontFamily: 'Nunito'),
                                   ),
                                   TextSpan(
                                     text: '  \n    Accurate & fast analysis\n',
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
-                                        fontWeight: FontWeight.w300),
+                                        fontWeight: FontWeight.w300,
+                                        fontFamily: 'Nunito'),
                                   ),
                                   TextSpan(
                                     text:
@@ -117,7 +123,8 @@ class _startnowState extends State<startnow> {
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
-                                        fontWeight: FontWeight.w300),
+                                        fontWeight: FontWeight.w300,
+                                        fontFamily: 'Nunito'),
                                   ),
                                 ],
                               ),

@@ -51,7 +51,7 @@ class _loginState extends State<login> {
                   style: TextStyle(
                       fontSize: 40,
                       color: Color.fromARGB(255, 165, 224, 54),
-                      fontFamily: 'Schyler'),
+                      fontFamily: 'PaytoneOne'),
                 ),
               ),
               const SizedBox(
@@ -59,7 +59,11 @@ class _loginState extends State<login> {
               ),
               const Text(
                 "Get curated diet plan",
-                style: TextStyle(fontSize: 20, color: Colors.grey),
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.grey,
+                    fontFamily: 'Nunito',
+                    fontWeight: FontWeight.bold),
               ),
               const SizedBox(
                 height: 90,
@@ -187,7 +191,11 @@ class _loginState extends State<login> {
                         alignment: Alignment.center,
                         child: const Text(
                           'Submit',
-                          style: TextStyle(color: Colors.black, fontSize: 20),
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: 'Nunito'),
                         ),
                       ),
                     ),
@@ -199,7 +207,11 @@ class _loginState extends State<login> {
                 // padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                 child: const Text(
                   'or login using',
-                  style: TextStyle(fontSize: 15, color: Colors.grey),
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.grey,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.bold),
                 ),
               ),
               const SizedBox(height: 50),

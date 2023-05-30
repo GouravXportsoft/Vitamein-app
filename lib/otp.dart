@@ -22,12 +22,18 @@ class _otpState extends State<otp> {
           children: [
             const Text(
               'Verify OTP',
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontFamily: 'Nunito',
+                  fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 15),
             const Text(
               'We have sent 6 digit otp to',
-              style: TextStyle(color: Colors.grey),
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontFamily: 'Nunito',
+                  fontWeight: FontWeight.bold),
             ),
             const SizedBox(
               height: 10,
@@ -61,7 +67,11 @@ class _otpState extends State<otp> {
                       alignment: Alignment.center,
                       child: Text(
                         'Submit',
-                        style: TextStyle(color: Colors.black, fontSize: 20),
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontFamily: 'Nunito',
+                            fontWeight: FontWeight.bold),
                       ),
                     ),
                   ),
@@ -72,7 +82,11 @@ class _otpState extends State<otp> {
             Container(
               child: Text(
                 'OTP not recived ?',
-                style: TextStyle(color: Colors.grey),
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontFamily: 'Nunito',
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
             SizedBox(
@@ -82,6 +96,8 @@ class _otpState extends State<otp> {
                 child: Text(
               'Resend OTP',
               style: TextStyle(
+                fontFamily: 'Nunito',
+                fontWeight: FontWeight.bold,
                 color: Color.fromARGB(255, 165, 224, 54),
               ),
             )),
