@@ -29,7 +29,9 @@ class _startnowState extends State<startnow> {
               Icons.account_circle,
               color: Colors.lightGreenAccent,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.popAndPushNamed(context, 'bottombar');
+            },
           )
         ],
       ),
@@ -140,7 +142,9 @@ class _startnowState extends State<startnow> {
                       width: double.infinity,
                       // color: Colors.lightGreenAccent,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.popAndPushNamed(context, 'dietchart');
+                        },
                         style: const ButtonStyle(alignment: Alignment.center),
                         child: const Text(
                           'Start now',
@@ -157,7 +161,9 @@ class _startnowState extends State<startnow> {
                   height: 95,
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, 'agepicker');
+                    },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.zero,
                       shape: RoundedRectangleBorder(
@@ -224,7 +230,9 @@ class _startnowState extends State<startnow> {
                   height: 100,
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, 'reportscreen');
+                    },
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.zero,
                       shape: RoundedRectangleBorder(

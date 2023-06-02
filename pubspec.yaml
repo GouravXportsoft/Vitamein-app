@@ -36,6 +36,9 @@ dependencies:
   pinput: ^2.2.31
   country_picker: ^2.0.20
   country_pickers: ^2.0.0
+  http: ^1.0.0
+  text_divider: ^1.0.0
+  numberpicker: ^2.1.2
 
 dev_dependencies:
   flutter_test:
@@ -66,6 +69,14 @@ flutter:
     - assets\fonts\images\pngegg.png
     - assets\fonts\images\dna_1f9ec.png
     - assets\fonts\images\open-book_1f4d6.png
+    - assets\fonts\Isolation_Mode(5).png
+    - assets\fonts\Isolation_Mode(4).png
+    - assets\fonts\Isolation_Mode(3).png
+    - assets\fonts\Isolation_Mode(2).png
+    - assets\fonts\Isolation_Mode(1).png
+    - assets\fonts\Isolation_Mode.png
+    - assets\fonts\images\118456-yogamental-health.png
+    - assets\fonts\images\Polygon1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
