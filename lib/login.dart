@@ -1,5 +1,3 @@
-// ignore_for_file: unused_local_variable
-
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:vitamein_flutter/squartile.dart';
