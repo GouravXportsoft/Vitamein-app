@@ -202,7 +202,6 @@ class _loginState extends State<login> {
                 height: 20,
               ),
               Container(
-                // padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                 child: const Text(
                   'or login using',
                   style: TextStyle(

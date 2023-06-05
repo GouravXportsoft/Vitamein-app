@@ -10,6 +10,7 @@ class otp extends StatefulWidget {
 
 // ignore: camel_case_types
 class _otpState extends State<otp> {
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
