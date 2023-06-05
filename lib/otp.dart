@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 
+// ignore: camel_case_types
 class otp extends StatefulWidget {
   const otp({super.key});
 
@@ -10,7 +11,6 @@ class otp extends StatefulWidget {
 
 // ignore: camel_case_types
 class _otpState extends State<otp> {
- 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,14 +39,14 @@ class _otpState extends State<otp> {
             const SizedBox(
               height: 10,
             ),
-            Pinput(
+            const Pinput(
               length: 6,
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Container(
-                padding: EdgeInsets.only(left: 10, right: 10),
+                padding: const EdgeInsets.only(left: 10, right: 10),
                 height: 50,
                 width: double.infinity,
                 child: ElevatedButton(
@@ -60,13 +60,13 @@ class _otpState extends State<otp> {
                   ),
                   child: Ink(
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                           colors: [Colors.yellowAccent, Colors.greenAccent]),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Container(
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         'Submit',
                         style: TextStyle(
                             color: Colors.black,
@@ -77,31 +77,28 @@ class _otpState extends State<otp> {
                     ),
                   ),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Container(
-              child: Text(
-                'OTP not recived ?',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontFamily: 'Nunito',
-                  fontWeight: FontWeight.bold,
-                ),
+            const Text(
+              'OTP not recived ?',
+              style: TextStyle(
+                color: Colors.grey,
+                fontFamily: 'Nunito',
+                fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Container(
-                child: Text(
+            const Text(
               'Resend OTP',
               style: TextStyle(
                 fontFamily: 'Nunito',
                 fontWeight: FontWeight.bold,
                 color: Color.fromARGB(255, 165, 224, 54),
               ),
-            )),
+            ),
           ],
         )),
       ),

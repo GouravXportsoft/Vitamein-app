@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class reportScreen extends StatefulWidget {
   const reportScreen({super.key});
 
@@ -40,6 +41,7 @@ class _reportScreenState extends State<reportScreen> {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.only(left: 20, right: 20),
+                      // ignore: deprecated_member_use
                       primary: Colors.grey,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30))),

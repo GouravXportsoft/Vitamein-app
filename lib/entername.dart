@@ -74,7 +74,8 @@ class _enternameState extends State<entername> {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
-                              fontFamily: 'Nunito'),
+                              fontFamily: 'Nunito',
+                              fontWeight: FontWeight.bold),
                         ),
                       ),
                     ),

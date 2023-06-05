@@ -29,17 +29,17 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Center(
           child: Container(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             color: Colors.black,
             child: Column(
               children: [
-                Divider(
+                const Divider(
                   color: Colors.grey,
                 ),
                 Container(
-                  padding: EdgeInsets.only(top: 10),
+                  padding: const EdgeInsets.only(top: 10),
                   alignment: Alignment.topLeft,
-                  child: Text(
+                  child: const Text(
                     'Your Diet Plan',
                     style: TextStyle(
                         color: Colors.lightGreenAccent,
@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                 ),
                 Container(
                   alignment: Alignment.topLeft,
-                  child: Text(
+                  child: const Text(
                     'Based on test uploaded on 2 May 2023',
                     style: TextStyle(
                         color: Colors.grey,
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                         fontWeight: FontWeight.bold),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
                 SizedBox(
@@ -137,10 +137,10 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 15,
                 ),
-                Container(
+                SizedBox(
                     height: 60,
                     width: double.infinity,
                     child: OutlinedButton(
@@ -148,8 +148,9 @@ class HomePage extends StatelessWidget {
                         backgroundColor: Colors.black,
                         shape: (RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20))),
+                        // ignore: deprecated_member_use
                         primary: Colors.white,
-                        side: BorderSide(
+                        side: const BorderSide(
                           color: Colors.lightGreenAccent,
                         ), //<-- SEE HERE
                       ),

@@ -108,7 +108,7 @@ class _startnowState extends State<startnow> {
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
-                                        fontWeight: FontWeight.w300,
+                                        fontWeight: FontWeight.w900,
                                         fontFamily: 'Nunito'),
                                   ),
                                   TextSpan(
@@ -116,7 +116,7 @@ class _startnowState extends State<startnow> {
                                     style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 18,
-                                        fontWeight: FontWeight.w300,
+                                        fontWeight: FontWeight.w900,
                                         fontFamily: 'Nunito'),
                                   ),
                                   TextSpan(
@@ -136,11 +136,7 @@ class _startnowState extends State<startnow> {
                       ),
                     ),
                     SizedBox(
-                      // decoration: BoxDecoration(
-                      //     color: Colors.lightGreenAccent,
-                      //     borderRadius: BorderRadius.circular(10)),
                       width: double.infinity,
-                      // color: Colors.lightGreenAccent,
                       child: TextButton(
                         onPressed: () {
                           Navigator.popAndPushNamed(context, 'dietchart');
@@ -157,7 +153,6 @@ class _startnowState extends State<startnow> {
               ),
               const SizedBox(height: 40),
               SizedBox(
-                  // padding: EdgeInsets.only(left: 10, right: 10),
                   height: 95,
                   width: double.infinity,
                   child: ElevatedButton(
