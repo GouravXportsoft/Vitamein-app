@@ -194,17 +194,6 @@ class _startnowState extends State<startnow> {
                                   ]),
                                 ),
                               ),
-                              // Container(
-                              //   alignment: Alignment.centerLeft,
-                              //   child: RichText(
-                              //     text: const TextSpan(children: [
-                              //       TextSpan(
-                              //           text: 'Profile',
-                              //           style: TextStyle(
-                              //               color: Colors.black, fontSize: 25))
-                              //     ]),
-                              //   ),
-                              // ),
                               const SizedBox(
                                 width: 5.0,
                               ),
