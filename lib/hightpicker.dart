@@ -2,23 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 void main() {
-  runApp(exampleApp());
+  runApp(const exampleApp());
 }
 
+// ignore: camel_case_types
 class exampleApp extends StatelessWidget {
+  const exampleApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  // ignore: library_private_types_in_public_api
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -55,7 +61,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
             alignment: Alignment.topLeft,
             child: Container(
                 padding: const EdgeInsets.only(left: 20, top: 10),
-                child: Text(
+                child: const Text(
                   "What's your height?",
                   style: TextStyle(
                       color: Colors.white,
@@ -63,10 +69,10 @@ class __IntegerExampleState extends State<_IntegerExample> {
                       fontSize: 25),
                 )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
-          Row(
+          const Row(
             children: [
               Expanded(
                 child: Divider(
@@ -83,10 +89,8 @@ class __IntegerExampleState extends State<_IntegerExample> {
               )
             ],
           ),
-          Container(
-            child: doubleExample(),
-          ),
-          Row(
+          const doubleExample(),
+          const Row(
             children: [
               Expanded(
                 child: Divider(
@@ -105,7 +109,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
               )
             ],
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
@@ -127,24 +131,24 @@ class __IntegerExampleState extends State<_IntegerExample> {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Row(
             children: [
               Container(
-                padding: EdgeInsets.only(left: 20, top: 210),
-                child: Text(
+                padding: const EdgeInsets.only(left: 20, top: 210),
+                child: const Text(
                   "Step 3 of 5",
                   style: TextStyle(
                       color: Colors.grey, fontFamily: "Nunito", fontSize: 15),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 230,
               ),
               Container(
-                padding: EdgeInsets.only(top: 210),
+                padding: const EdgeInsets.only(top: 210),
                 child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
@@ -153,7 +157,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
                             borderRadius: BorderRadius.circular(10))),
                     child: Ink(
                       decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
+                          gradient: const LinearGradient(colors: [
                             Colors.yellowAccent,
                             Colors.greenAccent
                           ]),
@@ -162,7 +166,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
                         width: 80,
                         height: 50,
                         alignment: Alignment.center,
-                        child: Text(
+                        child: const Text(
                           "Next",
                           style: TextStyle(
                               color: Colors.black,
@@ -180,31 +184,34 @@ class __IntegerExampleState extends State<_IntegerExample> {
   }
 }
 
+// ignore: camel_case_types
 class doubleExample extends StatefulWidget {
+  const doubleExample({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _doubleExampleState createState() => _doubleExampleState();
 }
 
+// ignore: camel_case_types
 class _doubleExampleState extends State<doubleExample> {
   double _currentDoubleValue = 10;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          DecimalNumberPicker(
-            selectedTextStyle:
-                TextStyle(fontSize: 30, color: Colors.lightGreenAccent),
-            value: _currentDoubleValue,
-            minValue: 01,
-            maxValue: 12,
-            decimalPlaces: 2,
-            haptics: false,
-            onChanged: (value) => setState(() => _currentDoubleValue = value),
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        DecimalNumberPicker(
+          selectedTextStyle:
+              const TextStyle(fontSize: 30, color: Colors.lightGreenAccent),
+          value: _currentDoubleValue,
+          minValue: 01,
+          maxValue: 12,
+          decimalPlaces: 2,
+          haptics: false,
+          onChanged: (value) => setState(() => _currentDoubleValue = value),
+        ),
+      ],
     );
   }
 }

@@ -2,19 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:numberpicker/numberpicker.dart';
 
 class ExampleApp extends StatelessWidget {
+  const ExampleApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  // ignore: library_private_types_in_public_api
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -55,14 +60,14 @@ class __IntegerExampleState extends State<_IntegerExample> {
                 onPressed: () {},
                 icon: const Icon(Icons.arrow_back_ios_new)),
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
           ),
           Container(
             alignment: Alignment.topLeft,
             child: Container(
-                padding: EdgeInsets.only(left: 20, top: 10),
-                child: Text(
+                padding: const EdgeInsets.only(left: 20, top: 10),
+                child: const Text(
                   "What's your age?",
                   style: TextStyle(
                       color: Colors.white,
@@ -70,64 +75,59 @@ class __IntegerExampleState extends State<_IntegerExample> {
                       fontSize: 25),
                 )),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
-          Divider(
+          const Divider(
             color: Colors.lightGreenAccent,
             indent: 100,
             endIndent: 100,
           ),
-          Container(
-            child: Column(
-              children: [
-                NumberPicker(
-                  selectedTextStyle:
-                      TextStyle(fontSize: 30, color: Colors.lightGreenAccent),
-                  value: _currentIntValue,
-                  minValue: 0,
-                  maxValue: 100,
-                  step: 1,
-                  haptics: false,
-                  onChanged: (value) =>
-                      setState(() => _currentIntValue = value),
-                ),
-              ],
-            ),
+          Column(
+            children: [
+              NumberPicker(
+                selectedTextStyle: const TextStyle(
+                    fontSize: 30, color: Colors.lightGreenAccent),
+                value: _currentIntValue,
+                minValue: 0,
+                maxValue: 100,
+                step: 1,
+                haptics: false,
+                onChanged: (value) => setState(() => _currentIntValue = value),
+              ),
+            ],
           ),
-          Divider(
+          const Divider(
             indent: 100,
             endIndent: 100,
             color: Colors.lightGreenAccent,
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
-          Container(
-            child: Text(
-              "Years",
-              style: TextStyle(
-                  color: Colors.lightGreenAccent,
-                  fontSize: 15,
-                  fontFamily: "Nunito",
-                  fontWeight: FontWeight.bold),
-            ),
+          const Text(
+            "Years",
+            style: TextStyle(
+                color: Colors.lightGreenAccent,
+                fontSize: 15,
+                fontFamily: "Nunito",
+                fontWeight: FontWeight.bold),
           ),
           Row(
             children: [
               Container(
-                padding: EdgeInsets.only(left: 20, top: 180),
-                child: Text(
+                padding: const EdgeInsets.only(left: 20, top: 180),
+                child: const Text(
                   "Step 2 of 5",
                   style: TextStyle(
                       color: Colors.grey, fontFamily: "Nunito", fontSize: 15),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 230,
               ),
               Container(
-                padding: EdgeInsets.only(top: 180),
+                padding: const EdgeInsets.only(top: 180),
                 child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
@@ -136,7 +136,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
                             borderRadius: BorderRadius.circular(10))),
                     child: Ink(
                       decoration: BoxDecoration(
-                          gradient: LinearGradient(colors: [
+                          gradient: const LinearGradient(colors: [
                             Colors.yellowAccent,
                             Colors.greenAccent
                           ]),
@@ -145,7 +145,7 @@ class __IntegerExampleState extends State<_IntegerExample> {
                         width: 80,
                         height: 50,
                         alignment: Alignment.center,
-                        child: Text(
+                        child: const Text(
                           "Next",
                           style: TextStyle(
                               color: Colors.black,

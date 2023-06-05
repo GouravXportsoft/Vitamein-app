@@ -2,6 +2,7 @@ import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:vitamein_flutter/squartile.dart';
 
+// ignore: camel_case_types
 class login extends StatefulWidget {
   const login({super.key});
 
@@ -70,7 +71,7 @@ class _loginState extends State<login> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
                     child: Container(
                       height: 1.0,
                       width: 100.0,
@@ -82,7 +83,7 @@ class _loginState extends State<login> {
                     style: TextStyle(fontSize: 15.0, color: Colors.grey),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 10.0),
                     child: Container(
                       height: 1.0,
                       width: 100.0,
@@ -166,11 +167,12 @@ class _loginState extends State<login> {
                 height: 20,
               ),
               Container(
-                  padding: EdgeInsets.only(left: 10, right: 10),
+                  padding: const EdgeInsets.only(left: 10, right: 10),
                   height: 50,
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
+                      // ignore: unused_local_variable
                       String phonenum = passPhone.text.toString();
                       Navigator.pushNamed(context, 'otp');
                     },
@@ -201,15 +203,13 @@ class _loginState extends State<login> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
-                child: const Text(
-                  'or login using',
-                  style: TextStyle(
-                      fontSize: 15,
-                      color: Colors.grey,
-                      fontFamily: 'Nunito',
-                      fontWeight: FontWeight.bold),
-                ),
+              const Text(
+                'or login using',
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Colors.grey,
+                    fontFamily: 'Nunito',
+                    fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 50),
               Row(

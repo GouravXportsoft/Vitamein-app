@@ -20,7 +20,7 @@ void main() {
         'entername': (context) => const entername(),
         'startnow': (context) => const startnow(),
         'dietchart': (context) => const DietChart(),
-        'agepicker': (context) => ExampleApp(),
+        'agepicker': (context) => const ExampleApp(),
         'bottombar': (context) => const BottomBar(),
         'reportscreen': (context) => const reportScreen(),
         'result': (context) => const ResultScreen(),
