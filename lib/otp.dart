@@ -98,7 +98,7 @@ class _otpState extends State<otp> {
                 ),
                 child: const Text(
                   'Resend OTP',
-                  style: TextStyle(fontSize: 18),
+                  style: TextStyle(fontSize: 17),
                 ),
               )
             ],
