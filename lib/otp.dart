@@ -91,14 +91,16 @@ class _otpState extends State<otp> {
               const SizedBox(
                 height: 20,
               ),
-              const Text(
-                'Resend OTP',
-                style: TextStyle(
-                  fontFamily: 'Nunito',
-                  fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 165, 224, 54),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  primary: Colors.lightGreenAccent, // Text Color
                 ),
-              ),
+                child: const Text(
+                  'Resend OTP',
+                  style: TextStyle(fontSize: 18),
+                ),
+              )
             ],
           ),
         ),
