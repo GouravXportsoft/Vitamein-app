@@ -1,4 +1,4 @@
-#Mon Jun 05 12:54:19 IST 2023
+#Wed Jun 07 09:31:52 IST 2023
 base.0=C\:\\Users\\Lovepreet Singh\\Desktop\\flutter project\\vitamein_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
